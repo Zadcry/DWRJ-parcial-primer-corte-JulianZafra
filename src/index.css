@@ -15,3 +15,23 @@
     /* ejemplo de uso de variables con css */
     background-color: var(--character-list-color);
 }
+
+.character{
+    background-color: var(--character-color);
+}
+
+.character h1{
+    color: var(--primary-font-color);
+}
+
+.character h2{
+    color: var(--primary-font-color);
+}
+
+.character h3{
+    color: var(--primary-font-color);
+}
+
+.character p{
+    color: var(--secondary-font-color);
+}

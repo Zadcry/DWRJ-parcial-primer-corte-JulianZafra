@@ -39,10 +39,12 @@ function createCharacterCard(character) {
         card = card+`
         <div class="character">
             <img src=${character[i].image}>
-            <div>
+            <div class="description">
                 <h1>${character[i].name}</h1>
-                <div>
+                <div class="status">
+                    <h4 class="${character[i].status}">●</h4>
                     <h2>${character[i].status}</h2>
+                    <h2>-</h2>
                     <h2>${character[i].species}</h2>
                 </div>
                 <p>Last known location:</p>

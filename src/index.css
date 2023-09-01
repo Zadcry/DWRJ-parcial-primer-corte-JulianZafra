@@ -14,24 +14,77 @@
 .character-list {
     /* ejemplo de uso de variables con css */
     background-color: var(--character-list-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
+
+body{
+    font-family:var(--font);
+}
+
+img{
+    max-width: 30vw;
+    max-height: 30vh;
+    border-radius: 3%;
+}
 .character{
     background-color: var(--character-color);
+    display: flex;
+    margin: 10px 5px;
+    min-width: 31vw;
+    border-radius: 3%;
 }
 
-.character h1{
+.description{
+    margin: 10px 0px 0px 12px;
+}
+
+.description h1{
     color: var(--primary-font-color);
+    font-size: 18px;
+    margin: 0px;
+    font-weight: bolder;
 }
 
-.character h2{
+.description h2{
     color: var(--primary-font-color);
+    font-size: 13px;
+    margin: 0px 3px;
+    font-weight:normal;
 }
 
-.character h3{
+.description h3{
     color: var(--primary-font-color);
+    font-size: 14px;
+    margin: 0px 0px 3vh 0px;
+    font-weight: lighter;
 }
 
-.character p{
+.description p{
     color: var(--secondary-font-color);
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.status{
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 3vh 0px;
+}
+
+.Alive{
+    color: var(--alive);
+    margin: 0px 3px;
+}
+
+.Dead{
+    color: var(--dead);
+    margin: 0px 3px;
+}
+
+.unknown{
+    color: var(--unknown);
+    margin: 0px 3px;
 }
